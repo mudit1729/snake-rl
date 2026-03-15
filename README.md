@@ -31,9 +31,27 @@ The plot above compares:
 - `avg_score_50` over environment steps
 - a smoothed episode-score trace over environment steps
 
-The qualitative checkpoint progression below comes from the strong plain DQN run at `0`, `5k`, `10k`, `20k`, `35k`, and `60k` steps.
+The qualitative checkpoint GIFs below come from the strong plain DQN run at `5k`, `10k`, `20k`, `35k`, and `60k` steps.
 
-![Plain DQN checkpoint progression](docs/assets/dqn_checkpoint_progression.gif)
+### 5k steps
+
+![Plain DQN at 5k](docs/assets/dqn_checkpoint_5k.gif)
+
+### 10k steps
+
+![Plain DQN at 10k](docs/assets/dqn_checkpoint_10k.gif)
+
+### 20k steps
+
+![Plain DQN at 20k](docs/assets/dqn_checkpoint_20k.gif)
+
+### 35k steps
+
+![Plain DQN at 35k](docs/assets/dqn_checkpoint_35k.gif)
+
+### 60k steps
+
+![Plain DQN at 60k](docs/assets/dqn_checkpoint_60k.gif)
 
 ## Reward function used in the main runs
 
