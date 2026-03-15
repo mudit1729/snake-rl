@@ -1,0 +1,19 @@
+# Dueling DQN configuration
+_target_: snake_rl.algos.dqn.DQNAgent
+
+encoder_type: "cnn"
+hidden_dim: 512
+dueling: true
+
+lr: 0.0001
+gamma: 0.99
+batch_size: 32
+
+buffer_size: 100000
+target_update_freq: 1000
+
+initial_epsilon: 1.0
+final_epsilon: 0.01
+epsilon_decay_steps: 100000
+
+double_dqn: true

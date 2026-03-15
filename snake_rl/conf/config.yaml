@@ -1,0 +1,36 @@
+# Main configuration for Snake RL training
+defaults:
+  - env: default
+  - agent: dqn
+  - _self_
+
+# Experiment settings
+experiment:
+  name: "snake_dqn"
+  seed: 42
+  device: "auto"  # auto, cpu, cuda
+  
+# Training settings
+training:
+  total_steps: 1000000
+  eval_frequency: 10000
+  eval_episodes: 10
+  save_frequency: 50000
+  log_frequency: 1000
+  
+# Logging and monitoring
+logging:
+  use_tensorboard: true
+  use_wandb: false  # Set to true and configure wandb settings
+  log_dir: "logs"
+  
+wandb:
+  project: "snake-rl"
+  entity: null  # Your wandb entity/username
+  tags: ["dqn", "snake"]
+  
+# Checkpointing
+checkpoints:
+  save_dir: "checkpoints"
+  keep_best: true
+  save_last: true

@@ -1,0 +1,26 @@
+# DQN agent configuration
+_target_: snake_rl.algos.dqn.DQNAgent
+
+# Network architecture
+encoder_type: "cnn"  # cnn, resnet, nature
+hidden_dim: 512
+dueling: false
+
+# Learning parameters
+lr: 0.0001
+gamma: 0.99
+batch_size: 32
+
+# Experience replay
+buffer_size: 100000
+
+# Target network
+target_update_freq: 1000
+
+# Exploration
+initial_epsilon: 1.0
+final_epsilon: 0.01
+epsilon_decay_steps: 100000
+
+# Algorithm variants
+double_dqn: true
